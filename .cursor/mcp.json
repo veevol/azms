@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "azms": {
+      "url": "https://azms.vercel.app/mcp"
+    }
+  }
+}

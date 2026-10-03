@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#3e4947", "background": "#fff8f5", "surface-bright": "#fff8f5", "on-secondary-container": "#6a635e", "tertiary-fixed-dim": "#79db8d", "surface-container-low": "#faf2ee", "inverse-primary": "#80d5cb", "on-secondary-fixed": "#1f1b17", "secondary-fixed": "#eae1da", "ink": "#1C1917", "on-error": "#ffffff", "accent-surface": "#F0FDFA", "expense": "#B91C1C", "border-hairline": "#E7E5E4", "on-primary-container": "#a3faef", "canvas": "#F6F4EF", "outline-variant": "#bdc9c6", "on-tertiary-container": "#a3ffb2", "inverse-surface": "#33302d", "primary-container": "#0f766e", "primary-fixed-dim": "#80d5cb", "secondary-container": "#eae1da", "on-secondary-fixed-variant": "#4b4641", "secondary": "#645d58", "secondary-fixed-dim": "#cec5bf", "surface-container-lowest": "#ffffff", "surface-container-high": "#eee7e3", "on-primary-fixed": "#00201d", "on-primary-fixed-variant": "#00504a", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#005323", "on-secondary": "#ffffff", "on-primary": "#ffffff", "primary-fixed": "#9cf2e8", "surface-tint": "#006a63", "surface-container": "#f4ece8", "on-surface": "#1e1b19", "tertiary": "#005f29", "accent-active": "#115E59", "draft-amber": "#B45309", "on-tertiary": "#ffffff", "tertiary-fixed": "#95f8a7", "inverse-on-surface": "#f7efeb", "primary": "#005c55", "surface-variant": "#e9e1dd", "surface-container-highest": "#e9e1dd", "on-background": "#1e1b19", "error-container": "#ffdad6", "income": "#15803D", "draft-surface": "#FEF3C7", "muted-ink": "#78716C", "surface-dim": "#e0d8d5", "surface": "#FFFFFF", "tertiary-container": "#087a38", "outline": "#6e7977", "on-tertiary-fixed": "#00210a", "error": "#ba1a1a" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "1.5rem", "space-xs": "0.25rem", "space-md": "0.75rem", "space-lg": "1rem", "margin": "1rem" }, fontFamily: { "body-default": ["Plus Jakarta Sans"], "headline-hero": ["Plus Jakarta Sans"], "body-muted": ["Plus Jakarta Sans"], "headline-page": ["Plus Jakarta Sans"], "headline-hero-mobile": ["Plus Jakarta Sans"], "label-micro": ["Plus Jakarta Sans"], "headline-section": ["Plus Jakarta Sans"] }, fontSize: { "body-default": ["15px", { lineHeight: "22px", fontWeight: "500" }], "headline-hero": ["38px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-muted": ["13px", { lineHeight: "18px", fontWeight: "400" }], "headline-page": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-hero-mobile": ["36px", { lineHeight: "42px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-micro": ["11px", { lineHeight: "14px", fontWeight: "500" }], "headline-section": ["16px", { lineHeight: "24px", fontWeight: "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-canvas text-on-surface font-body-default min-h-screen flex flex-col antialiased selection:bg-accent-surface selection:text-primary"><div class="w-full max-w-[390px] mx-auto min-h-screen flex flex-col bg-canvas"><main class="flex-1 flex flex-col relative w-full px-margin pt-safe pb-safe bg-canvas"><div class="flex flex-col w-full">
+<div class="pt-12 sm:pt-16 pb-8">
+<div class="inline-flex items-center gap-2 mb-3">
+<div class="w-8 h-8 rounded-xl bg-primary flex items-center justify-center shadow-sm">
+<span class="font-headline-page text-headline-page text-on-primary tracking-tight">K</span>
+</div>
+<span class="font-headline-page text-headline-page text-ink tracking-tight font-bold">Kas</span>
+</div>
+<p class="font-body-default text-body-default text-muted-ink max-w-[280px] leading-relaxed">
+      Catat uang dari HP, Claude, Gemini, atau Cursor.
+    </p>
+</div>
+<form class="flex flex-col gap-4 w-full" onsubmit="event.preventDefault();">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-micro text-label-micro text-on-surface-variant font-semibold" for="email">
+        Email
+      </label>
+<div class="w-full bg-surface rounded-xl shadow-sm transition-all duration-150 focus-within:shadow-md focus-within:bg-accent-surface">
+<input autocomplete="email" class="w-full h-12 px-4 bg-transparent text-ink placeholder:text-muted-ink/60 font-body-default text-body-default outline-none rounded-xl" id="email" inputmode="email" placeholder="nama@email.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-micro text-label-micro text-on-surface-variant font-semibold" for="password">
+          Kata sandi
+        </label>
+<button class="font-body-muted text-body-muted text-muted-ink hover:text-ink transition-colors min-h-[24px] inline-flex items-center" type="button">
+          Lupa?
+        </button>
+</div>
+<div class="relative w-full bg-surface rounded-xl shadow-sm transition-all duration-150 focus-within:shadow-md focus-within:bg-accent-surface">
+<input autocomplete="current-password" class="w-full h-12 pl-4 pr-12 bg-transparent text-ink placeholder:text-muted-ink/60 font-body-default text-body-default outline-none rounded-xl tracking-wider" id="password" placeholder="••••••••" type="password"/>
+<button aria-label="Tampilkan atau sembunyikan kata sandi" class="absolute right-0 top-0 bottom-0 w-12 flex items-center justify-center text-muted-ink hover:text-ink transition-colors" id="togglePassword" type="button">
+<span class="material-symbols-outlined text-[20px]" id="eyeIcon">visibility_off</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3 pt-2">
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary font-headline-section text-headline-section font-semibold flex items-center justify-center active:scale-[0.99] active:bg-accent-active transition-all shadow-sm" type="submit">
+        Masuk
+      </button>
+<button class="w-full min-h-[44px] py-2.5 rounded-xl text-primary font-body-default text-body-default font-semibold text-center hover:text-accent-active active:opacity-70 transition-colors" type="button">
+        Buat akun
+      </button>
+</div>
+</form>
+<div class="py-24 w-full"></div>
+</div>
+<script>
+  (function() {
+    const toggleBtn = document.getElementById('togglePassword');
+    const pwdInput = document.getElementById('password');
+    const eyeIcon = document.getElementById('eyeIcon');
+    
+    if (toggleBtn && pwdInput && eyeIcon) {
+      toggleBtn.addEventListener('click', function() {
+        const isHidden = pwdInput.type === 'password';
+        pwdInput.type = isHidden ? 'text' : 'password';
+        eyeIcon.textContent = isHidden ? 'visibility' : 'visibility_off';
+      });
+    }
+  })();
+</script></main></div></body></html>
