@@ -1,5 +1,5 @@
-import { asal, cors, json } from "./asal";
-import { klienAnon, klienPengguna } from "./supabase-admin";
+import { asal, cors, json } from "./asal.js";
+import { klienAnon, klienPengguna } from "./supabase-admin.js";
 
 type Rpc = { jsonrpc: "2.0"; id?: string | number | null; method: string; params?: Record<string, unknown> };
 

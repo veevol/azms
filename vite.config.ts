@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { VitePWA } from "vite-plugin-pwa";
 import type { IncomingMessage, ServerResponse } from "node:http";
-import nodeTangani from "./server/node";
+import nodeTangani from "./server/node.js";
 
 function sambungkanMcp() {
   return {

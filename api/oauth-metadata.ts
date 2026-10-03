@@ -1,3 +1,3 @@
-import nodeTangani from "../server/node";
+import nodeTangani from "../server/node.js";
 
 export default nodeTangani;

@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
-import { tangani } from "./mcp";
+import { tangani } from "./mcp.js";
 
 export default async function nodeTangani(req: IncomingMessage & { body?: unknown }, res: ServerResponse) {
   const host = req.headers.host || "localhost";
