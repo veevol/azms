@@ -6,7 +6,9 @@ export default async function nodeTangani(req: IncomingMessage & { body?: unknow
   const proto = (req.headers["x-forwarded-proto"] as string) || (host.includes("localhost") ? "http" : "https");
   let body: Buffer | undefined;
   if (req.body !== undefined && req.method !== "GET" && req.method !== "HEAD") {
-    body = Buffer.from(typeof req.body === "string" ? req.body : JSON.stringify(req.body));
+    body = Buffer.isBuffer(req.body)
+      ? req.body
+      : Buffer.from(typeof req.body === "string" ? req.body : JSON.stringify(req.body));
   } else if (req.method !== "GET" && req.method !== "HEAD") {
     const potong: Buffer[] = [];
     for await (const bagian of req) potong.push(bagian as Buffer);
@@ -17,6 +19,14 @@ export default async function nodeTangani(req: IncomingMessage & { body?: unknow
   for (const [kunci, nilai] of Object.entries(req.headers)) {
     if (typeof nilai === "string") headers.set(kunci, nilai);
     else if (Array.isArray(nilai)) headers.set(kunci, nilai.join(", "));
+  }
+  if (body && req.body !== undefined && typeof req.body === "object" && !Buffer.isBuffer(req.body)) {
+    // Vercel sudah mengurai isi permintaan (termasuk formulir) menjadi objek; kita serialkan sebagai JSON, jadi labelnya harus JSON.
+    headers.set("content-type", "application/json");
+  }
+  if (body) {
+    headers.delete("content-length");
+    headers.delete("transfer-encoding");
   }
   const request = new Request(`${proto}://${host}${req.url}`, {
     method: req.method,
